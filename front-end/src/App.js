@@ -1,10 +1,19 @@
+import Footer from './components/core/Footer'
+import Header from './components/core/Header'
+import HomePage from './components/screens/homepage/HomePage'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Front end</h1>
-    </div>
+    <>
+      <Header />
+      <main>
+        <HomePage />
+      </main>
+      <Footer />
+    </>
   )
 }
 
