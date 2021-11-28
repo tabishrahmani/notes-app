@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
 .home-page {
   min-height: 93vh;
   display: flex;
@@ -14,11 +16,17 @@
 
 .title {
   font-size: 95px;
+  font-family: 'Caveat', cursive;
+  color: #fff;
+  text-shadow: 2px 2px #000;
 }
 
 .subtitle {
   font-size: 25px;
   padding-top: 10px;
+  font-family: 'Caveat', cursive;
+  color: #fff;
+  /* text-shadow: 2px 2px #000; */
 }
 
 .button-container {

@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <strong>NOTES</strong>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,10 +27,7 @@ const Header = () => {
             </Form>
           </Nav>
           <Nav>
-            <Nav.Link href="/">
-              My Notes
-              {/* FIXME: change link */}
-            </Nav.Link>
+            <Nav.Link href="/my-notes">My Notes</Nav.Link>
             <NavDropdown title="admin" id="basic-nav-dropdown">
               <NavDropdown.Item href="/">
                 My Profile
