@@ -15,9 +15,9 @@ const loginController = asyncHandler(async (req, res, next) => {
     return errorResponse(res, error.statusCode, 'fail', error.message)
   }
   let password_check = await userExists.matchPassword(password)
-  console.log(password_check)
+  //   console.log(password_check)
   if (password_check) {
-    console.log('checking...')
+    // console.log('checking...')
     const data = {
       email,
       token: generateToken(userExists._id),

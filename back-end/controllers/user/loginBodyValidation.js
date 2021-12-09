@@ -21,6 +21,7 @@ const loginBodyValidation = (req, res, next) => {
         message: message.replace(/['"]/g, ''),
         label: context.label,
       }))
+      console.log(details)
       errorResponse(res, 400, 'fail', null, details)
     }
     if (!error) {

@@ -12,8 +12,8 @@ import MainScreen from '../../core/MainScreen'
 
 const MyNotes = () => {
   const fetchNotes = async () => {
-    const notesAPI = await axios.get('http://localhost:4000/')
-    console.log(notesAPI)
+    const notesAPI = await axios.get('/notes')
+    // console.log(notesAPI)
     setNotes(notesAPI.data)
   }
 

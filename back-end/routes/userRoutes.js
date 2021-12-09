@@ -3,9 +3,9 @@ const router = require('express').Router()
 const loginBodyValidation = require('../controllers/user/loginBodyValidation')
 const loginController = require('../controllers/user/loginController')
 const registerBodyValidation = require('../controllers/user/registerBodyValidation')
-const registerUserController = require('../controllers/user/registerUserController')
+const registerController = require('../controllers/user/registerController')
 
-router.post('/register', registerBodyValidation, registerUserController)
+router.post('/register', registerBodyValidation, registerController)
 
 router.post('/login', loginBodyValidation, loginController)
 

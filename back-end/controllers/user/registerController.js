@@ -13,14 +13,13 @@ const registerUserController = asyncHandler(async (req, res, next) => {
     const error = new CustomError('User already exists!', 403)
     return errorResponse(res, error.statusCode, 'fail', error.message)
   }
-
+  // console.log(requestBody)
   const newUser = await user.create(requestBody)
   if (newUser) {
     const data = {
       name,
       email,
       profile_photo,
-      token: generateToken(newUser._id),
     }
     return successResponse(
       res,

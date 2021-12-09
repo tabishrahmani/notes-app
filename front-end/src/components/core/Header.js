@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   Container,
   Form,
@@ -8,6 +9,7 @@ import {
   NavDropdown,
 } from 'react-bootstrap'
 const Header = () => {
+  const navigate = useNavigate()
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -34,9 +36,13 @@ const Header = () => {
                 {/* FIXME: change link */}
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/">
+              <NavDropdown.Item
+                onClick={() => {
+                  localStorage.removeItem('userInfo')
+                  navigate('/')
+                }}
+              >
                 Logout
-                {/* FIXME: change link */}
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

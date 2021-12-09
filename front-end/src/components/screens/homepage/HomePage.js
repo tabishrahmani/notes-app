@@ -1,9 +1,18 @@
 import React from 'react'
 import { Container, Row, Button } from 'react-bootstrap'
-
+// import { useNavigate } from 'react-router-dom'
 import './homePage.css'
 
 const HomePage = () => {
+  //FIXME: error in navigate and useEffect
+  // const navigate = useNavigate()
+  // useEffect(() => {
+  //   const userInfo = localStorage.getItem('userInfo')
+  //   if (userInfo) {
+  //     navigate('/my-notes')
+  //   }
+  // }, [])
+
   return (
     <div className="home-page">
       <Container>
